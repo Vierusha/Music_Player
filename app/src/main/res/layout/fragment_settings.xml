@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundHigh"
+    android:orientation="vertical"
+    tools:context=".fragments.SettingsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            app:collapseIcon="@drawable/close"
+            app:menu="@menu/menu_settings"
+            app:navigationIcon="@drawable/close"
+            app:title="@string/settings"
+            app:titleTextColor="?colorSecondary" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:orientation="vertical"
+            android:padding="1dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="end"
+                android:layout_marginRight="20dp"
+                android:text="@string/ui"
+                android:textColor="?colorSecondary"
+                android:textSize="@dimen/text_big_med"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/theme_mode_option"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackgroundHigh"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/current_theme_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.Neumorph.ImageView"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/image"
+                    android:src="@drawable/queue_add"
+                    app:tint="?colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <soup.neumorphism.NeumorphCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorBackgroundHigh"
+                        app:neumorph_shapeType="flat"
+                        app:neumorph_inset="12dp"
+                        app:neumorph_insetStart="12dp"
+                        app:neumorph_insetEnd="12dp"
+                        app:neumorph_insetTop="12dp"
+                        app:neumorph_insetBottom="12dp"
+                        app:neumorph_shadowElevation="6dp"
+                        app:neumorph_shadowColorLight="@color/highlight"
+                        app:neumorph_shadowColorDark="@color/shadow_color"
+                        android:padding="15dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="bottom"
+                        android:text="@string/select_default_theme"
+                        android:textColor="?colorPrimary"
+                        android:textSize="@dimen/text_big" />
+                    </soup.neumorphism.NeumorphCardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chip_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/auto_chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/automatic"
+                    app:chipIcon="@drawable/auto_mode" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/night_chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/dark"
+                    app:chipIcon="@drawable/night_mode" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/light_chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/light"
+                    app:chipIcon="@drawable/light_mode" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/accent_option"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.Neumorph.ImageView"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/image"
+                    android:src="@drawable/palette"
+                    app:tint="?colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+                    <soup.neumorphism.NeumorphCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:neumorph_shapeType="flat"
+                        app:neumorph_inset="12dp"
+                        app:neumorph_insetStart="12dp"
+                        app:neumorph_insetEnd="12dp"
+                        app:neumorph_insetTop="12dp"
+                        app:neumorph_insetBottom="12dp"
+                        app:neumorph_shadowElevation="6dp"
+                        app:neumorph_shadowColorLight="@color/highlight"
+                        app:neumorph_shadowColorDark="@color/shadow_color"
+                        android:padding="15dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="bottom"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="@string/select_accent_color"
+                        android:textColor="?colorPrimary"
+                        android:textSize="@dimen/text_big" />
+                    </soup.neumorphism.NeumorphCardView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/accent_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/album_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.Neumorph.ImageView"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/image"
+                    android:src="@drawable/album"
+                    app:tint="?colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <soup.neumorphism.NeumorphCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:neumorph_shapeType="flat"
+                        app:neumorph_inset="12dp"
+                        app:neumorph_insetStart="12dp"
+                        app:neumorph_insetEnd="12dp"
+                        app:neumorph_insetTop="12dp"
+                        app:neumorph_insetBottom="12dp"
+                        app:neumorph_shadowElevation="6dp"
+                        app:neumorph_shadowColorLight="@color/highlight"
+                        app:neumorph_shadowColorDark="@color/shadow_color"
+                        android:padding="15dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="bottom"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="@string/show_embedded_album_arts"
+                        android:textColor="?colorPrimary"
+                        android:textSize="@dimen/text_big" />
+                    </soup.neumorphism.NeumorphCardView>
+                </LinearLayout>
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/album_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Base.CardView"
+                    android:layout_gravity="center_vertical"
+                    android:checked="true" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="end"
+                android:layout_marginRight="20dp"
+                android:text="@string/general"
+                android:textColor="?colorSecondary"
+                android:textSize="@dimen/text_medium"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/folder_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.Neumorph.ImageView"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/image"
+                    android:src="@drawable/library_music"
+                    app:tint="?colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <soup.neumorphism.NeumorphCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:neumorph_shapeType="flat"
+                        app:neumorph_inset="12dp"
+                        app:neumorph_insetStart="12dp"
+                        app:neumorph_insetEnd="12dp"
+                        app:neumorph_insetTop="12dp"
+                        app:neumorph_insetBottom="12dp"
+                        app:neumorph_shadowElevation="6dp"
+                        app:neumorph_shadowColorLight="@color/highlight"
+                        app:neumorph_shadowColorDark="@color/shadow_color"
+                        android:padding="15dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="bottom"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="@string/folder_option_title"
+                        android:textColor="?colorPrimary"
+                        android:textSize="@dimen/text_big" />
+                    </soup.neumorphism.NeumorphCardView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/refresh_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.Neumorph.ImageView"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/image"
+                    android:src="@drawable/refresh"
+                    app:tint="?colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <soup.neumorphism.NeumorphCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:neumorph_shapeType="flat"
+                        app:neumorph_inset="12dp"
+                        app:neumorph_insetStart="12dp"
+                        app:neumorph_insetEnd="12dp"
+                        app:neumorph_insetTop="12dp"
+                        app:neumorph_insetBottom="12dp"
+                        app:neumorph_shadowElevation="6dp"
+                        app:neumorph_shadowColorLight="@color/highlight"
+                        app:neumorph_shadowColorDark="@color/shadow_color"
+                        android:padding="15dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="bottom"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="@string/refresh_title"
+                        android:textColor="?colorPrimary"
+                        android:textSize="@dimen/text_big" />
+                    </soup.neumorphism.NeumorphCardView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

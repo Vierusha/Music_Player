@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Music Player</string>
+
+
+    <string name="image">image</string>
+    <string name="album_art_dir">content://media/external/audio/albumart</string>
+    <string name="music_bitrate_freq"> ----- kHz • --- kbps</string>
+    <string name="search">Search</string>
+    <string name="filter">Filter</string>
+    <string name="a_z">A-Z</string>
+    <string name="z_a">Z-A</string>
+    <string name="newest_first">Newest first</string>
+    <string name="oldest_first">Oldest first</string>
+    <string name="most_songs">Most songs</string>
+    <string name="least_songs">Least songs</string>
+    <string name="most_albums">Most albums</string>
+    <string name="least_albums">Least albums</string>
+    <string name="longest_dur">Longest duration</string>
+    <string name="shortest_duration">Shortest duration</string>
+    <string name="add_to_queue">Add to queue</string>
+    <string name="more">More</string>
+    <string name="ui">UI</string>
+    <string name="select_accent_color">Color Palette</string>
+    <string name="show_embedded_album_arts">Album Arts</string>
+    <string name="now_playing">Now playing</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+    <string name="automatic">Auto</string>
+    <string name="select_default_theme">THEMES</string>
+    <string name="general">GENERAL</string>
+    <string name="folder_option_title">Select folders to exclude</string>
+    <string name="facebook">Facebook</string>
+    <string name="zero_time">00:00</string>
+    <string name="refresh_title">Refresh Media</string>
+    <string name="options">OPTIONS</string>
+    <string name="add_to_playlist">Add to playlist</string>
+    <string name="playlists">PLAYLISTS</string>
+    <string name="enter_new_playlist_name">Enter new name for playlist</string>
+    <string name="add">add</string>
+    <string name="delete_playlist">Delete playlist</string>
+    <string name="oops">Your don\'t have any playlist yet! \n Go ahead create one.\n🖊️ 🖋️ ✒️ 🖌️ 🖍️ 📝 ✏️ </string>
+    <string name="enter_new_title">Enter new title</string>
+    <string name="caution_metadata">Caution: There could be some issues if the file is invalid from the start! Also some changes might not reflect</string>
+    <string name="songs">Songs 🎤</string>
+    <string name="artist">Artist 🙈</string>
+    <string name="album">Album 📚</string>
+    <string name="playlist">Playlist 📜</string>
+    <string name="settings">Settings 🛠</string>
+</resources>

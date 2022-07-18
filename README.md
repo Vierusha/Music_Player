@@ -1,33 +1,18 @@
 <p align="center">
-  <img width="300" src="https://github.com/AP-Atul/music_player_lite/blob/main/assets/music_player_lite.gif" alt="app gif">
-</p>
-
-<p align="center">
-  A elegant and light weight music player for android <br>
+ <img src="https://user-images.githubusercontent.com/109197326/179543116-bc06edb9-a8a4-49fa-b71d-7041409cfa03.gif">
 </p>
 
 ---
-### Download
-| App/Source | Github | Sizzydroid |
---- | --- | ---
-|Lite|[release v0.2](https://github.com/AP-Atul/music_player_lite/releases/download/v0.2/mplite.apk)| <a href="https://apt.izzysoft.de/fdroid/index/apk/com.atul.musicplayerlite"><img src="https://github.com/AP-Atul/music_player_lite/raw/main/assets/IzzyOnDroid.png" width="200px"></a> |
-|Online|[release v0.2](https://github.com/AP-Atul/music_player_lite/releases/download/v0.2/mplite_online.apk)| <a href="https://apt.izzysoft.de/fdroid/index/apk/com.atul.musicplayeronline"><img src="https://github.com/AP-Atul/music_player_lite/raw/main/assets/IzzyOnDroid.png" width="200px"></a> |
+<p>Features &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 
-### Features
-* Listen to music
-* Manage the queue and shuffle/ repeat mode
-* Change colors of the app
-* Manage folders to exclude(hide)
-* Browse/ Sort/ Search albums and artists
-* Change between Dark and Light Modes
-* Create playlists by long pressing on music
+<p>♠ Soft UI &nbsp;</p>
+<p>♠ Dark and Light themes</p>
+<p>♠ Color Palette</p>
+<p>♠ Search..sorting..playlist...add queue etc</p>
 
-### Working on
-* UI improvements
-* Performance improvements
+<p>Working on &nbsp;</p>
 
-### References
-Highly motivated by [Music Player GO](https://github.com/enricocid/Music-Player-GO)
+<p>♦ still looking for bug(s) to fixed</p>
+<p>♦ need for input and review contribution to this is highly recommended</p>
 
-
-#### Any contribution is highly welcomed
+ <p>motivated by <a href="https://github.com/enricocid/Music-Player-GO">[Music Player GO]</a></p>
